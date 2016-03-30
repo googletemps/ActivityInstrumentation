@@ -16,10 +16,10 @@
 
 package com.example.android.activityinstrumentation;
 
-import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -32,7 +32,7 @@ import java.util.Arrays;
  * Basic activity with a spinner. The spinner should persist its position to disk every time a
  * new selection is made.
  */
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     /** Shared preferences key: Holds spinner position. Must not be negative. */
     private static final String PREF_SPINNER_POS = "spinner_pos";
